@@ -5,8 +5,17 @@
 #include <ctype.h>
 #include <math.h>
 
-#define C 16
-#define D 15
+#define A 7
+#define B 8
+
+void convertToBinary(unsigned a) {
+  /* step 1 */
+  if (a > 1) convertToBinary(a / 2);
+
+  /* step 2 */
+  printf("%d", a % 2);
+}
+
 
 int main()
 {
@@ -65,17 +74,20 @@ int main()
 
     printf("Parte fraccionaria: %d\n",parte_fraccionaria);
 
-    // Conversion a Q(16,15)
+    // Conversion a Q(7,8)
 
     // Hacemos el corrimiento de los bits para que la parte entera sea la mas significativa
 
-    int32_t escalaEntera = parte_entera << D; // corro d posiciones
+    int32_t escalaEntera = parte_entera << A; // corro d posiciones
 
-    int32_t escalaDecimal = (parte_fraccionaria << D) / mult_fraccionario;
+    int32_t escalaDecimal = (parte_fraccionaria << A) / mult_fraccionario;
 
     int32_t valor = signo * (escalaEntera + escalaDecimal);
 
-    printf("Decimal: %d , Hexadecimal: %x\n",valor, (uint32_t) valor);
+    printf("Decimal: %d , Hexadecimal: 0x%x\nBinario: ",valor, (uint32_t) valor);
 
+    convertToBinary(valor);
     return 0;
 }
+
+
