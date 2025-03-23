@@ -27,3 +27,14 @@ int main()
     else
         signo = 1;
 
+
+    int parte_entera =0;
+
+    while(isdigit(numero[i]))
+    {
+        parte_entera = parte_entera *10 + (numero[i] - '0');
+        i++;
+    }
+
+    printf("Parte entera: %d",parte_entera);
+
