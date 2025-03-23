@@ -38,3 +38,19 @@ int main()
 
     printf("Parte entera: %d",parte_entera);
 
+    int parte_fraccionaria = 0;
+    int mult_fraccionario = 1;
+
+    if ((numero[i] == '.') || (numero[i] == ','))
+    {
+        i++;
+        while(isdigit(numero[i]))
+        {
+            parte_fraccionaria = parte_fraccionaria *10 + (numero[i] - '0');
+            i++;
+        }
+    }
+
+    printf("Parte fraccionaria: %d",parte_fraccionaria);
+    return 0;
+}
