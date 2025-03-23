@@ -15,3 +15,15 @@ int main()
         return 1;
     }
 
+
+    int signo,posPunto;
+    int i=0;
+
+    if (numero[0] == '-')
+    {
+        signo = -1;
+        i++;
+    }
+    else
+        signo = 1;
+
