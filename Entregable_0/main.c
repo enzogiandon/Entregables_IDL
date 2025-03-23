@@ -3,6 +3,10 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+#include <math.h>
+
+#define C 16
+#define D 15
 
 int main()
 {
@@ -18,7 +22,7 @@ int main()
     }
 
 
-    int signo,posPunto;
+    int signo = 1;
     int i=0;
 
     // Chequeo signo
@@ -27,9 +31,6 @@ int main()
         signo = -1;
         i++;
     }
-    else
-        signo = 1;
-
 
     // Analizo la parte entera digito a digito
     int parte_entera =0;
@@ -41,7 +42,7 @@ int main()
     }
 
     // Imprimo (prueba)
-    printf("Parte entera: %d",parte_entera);
+    printf("Parte entera: %d\n",parte_entera);
 
 
 
@@ -56,12 +57,25 @@ int main()
         while(isdigit(numero[i]))
         {
             parte_fraccionaria = parte_fraccionaria *10 + (numero[i] - '0');
+            mult_fraccionario *= 10;
             i++;
         }
     }
-
     //Imprimo (prueba)
 
-    printf("Parte fraccionaria: %d",parte_fraccionaria);
+    printf("Parte fraccionaria: %d\n",parte_fraccionaria);
+
+    // Conversion a Q(16,15)
+
+    // Hacemos el corrimiento de los bits para que la parte entera sea la mas significativa
+
+    int32_t escalaEntera = parte_entera << D; // corro d posiciones
+
+    int32_t escalaDecimal = (parte_fraccionaria << D) / mult_fraccionario;
+
+    int32_t valor = signo * (escalaEntera + escalaDecimal);
+
+    printf("Decimal: %d , Hexadecimal: %x\n",valor, (uint32_t) valor);
+
     return 0;
 }
