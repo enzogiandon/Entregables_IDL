@@ -75,7 +75,7 @@ int main()
 
 
     // REVISAR VALORES DE RANGO (CON DECIMAL)
-    if ((parte_entera < (-128) || parte_entera > 127))
+    if ((signo * parte_entera < (-128) || signo * parte_entera > 127))
     {
         printf("Fuera de rango");
         return 1;
