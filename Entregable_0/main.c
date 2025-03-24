@@ -3,7 +3,6 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-#include <math.h>
 
 #define A 7
 #define B 8
@@ -50,9 +49,6 @@ int main()
         i++;
     }
 
-    // Imprimo (prueba)
-    printf("Parte entera: %d\n",parte_entera);
-
 
 
     // Analizo la parte fraccionaria digito a digito
@@ -70,21 +66,30 @@ int main()
             i++;
         }
     }
-    //Imprimo (prueba)
 
+
+    // REVISAR VALORES DE RANGO (CON DECIMAL)
+    if ((parte_entera < (-128) || parte_entera > 127)){
+            printf("Fuera de rango");
+            return 1;
+    }
+
+
+    // Imprimo (prueba)
+    printf("Parte entera: %d\n",parte_entera);
     printf("Parte fraccionaria: %d\n",parte_fraccionaria);
 
     // Conversion a Q(7,8)
 
     // Hacemos el corrimiento de los bits para que la parte entera sea la mas significativa
 
-    int16_t escalaEntera = parte_entera << B); // corro B posiciones
+    int16_t escalaEntera = (parte_entera << B); // corro B posiciones
 
     int16_t escalaDecimal = (parte_fraccionaria << B) / mult_fraccionario; // corro B posiciones / 10^ n digitos
 
     int16_t valor = signo * (escalaEntera + escalaDecimal);
 
-    printf("Decimal: %d , Hexadecimal: 0x%04X\nBinario: ",valor, (uint16_t) valor);
+    printf("Hexadecimal: 0x%04X\nBinario: ", (uint16_t) valor);
 
     convertToBinary(valor);
     return 0;
