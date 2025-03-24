@@ -46,7 +46,7 @@ int main()
 
     while(isdigit(numero[i]))
     {
-        parte_entera = parte_entera *10 + (numero[i] - '0'); // Conversion de digito a numero
+        parte_entera = parte_entera * 10 + (numero[i] - '0'); // Conversion de digito a numero
         i++;
     }
 
@@ -78,16 +78,15 @@ int main()
 
     // Hacemos el corrimiento de los bits para que la parte entera sea la mas significativa
 
-    int32_t escalaEntera = parte_entera << A; // corro d posiciones
+    int16_t escalaEntera = parte_entera << B); // corro B posiciones
 
-    int32_t escalaDecimal = (parte_fraccionaria << A) / mult_fraccionario;
+    int16_t escalaDecimal = (parte_fraccionaria << B) / mult_fraccionario; // corro B posiciones / 10^ n digitos
 
-    int32_t valor = signo * (escalaEntera + escalaDecimal);
+    int16_t valor = signo * (escalaEntera + escalaDecimal);
 
-    printf("Decimal: %d , Hexadecimal: 0x%x\nBinario: ",valor, (uint32_t) valor);
+    printf("Decimal: %d , Hexadecimal: 0x%04X\nBinario: ",valor, (uint16_t) valor);
 
     convertToBinary(valor);
     return 0;
 }
-
 
