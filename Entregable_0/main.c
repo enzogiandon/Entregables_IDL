@@ -14,7 +14,7 @@ void convertToBinary16(unsigned a,int i)
     if (i<16) // solo para 16 bits
     {
         /* step 1 */
-        if (a > 1) convertToBinary(a / 2,i);
+        if (a > 1) convertToBinary16(a / 2,i);
 
         /* step 2 */
         printf("%d", a % 2);
