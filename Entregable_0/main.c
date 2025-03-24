@@ -7,25 +7,31 @@
 #define A 7
 #define B 8
 
-void convertToBinary(unsigned a) {
-  /* step 1 */
-  if (a > 1) convertToBinary(a / 2);
+void convertToBinary16(unsigned a,int i)
+{
 
-  /* step 2 */
-  printf("%d", a % 2);
+    i++;
+    if (i<16) // solo para 16 bits
+    {
+        /* step 1 */
+        if (a > 1) convertToBinary(a / 2,i);
+
+        /* step 2 */
+        printf("%d", a % 2);
+    }
 }
 
 
 int main()
 {
-    printf("Entregable 0\nIngrese un n√∫mero con decimal, que ser√° validado posteriormente:\n");
+    printf("Entregable 0\nIngrese un n˙mero con decimal, que ser· validado posteriormente:\n");
 
     char numero[30];
 
     // Chequeo validez de la entrada
     if (scanf("%s",numero) !=1)
     {
-        printf("Entrada inv√°lida.");
+        printf("Entrada inv·lida.");
         return 1;
     }
 
@@ -69,9 +75,10 @@ int main()
 
 
     // REVISAR VALORES DE RANGO (CON DECIMAL)
-    if ((parte_entera < (-128) || parte_entera > 127)){
-            printf("Fuera de rango");
-            return 1;
+    if ((parte_entera < (-128) || parte_entera > 127))
+    {
+        printf("Fuera de rango");
+        return 1;
     }
 
 
@@ -89,9 +96,11 @@ int main()
 
     int16_t valor = signo * (escalaEntera + escalaDecimal);
 
-    printf("Hexadecimal: 0x%04X\nBinario: ", (uint16_t) valor);
+    printf("Hexadecimal: 0x%04X\n", (uint16_t) valor);
 
-    convertToBinary(valor);
+    //  BORRAR ESTO
+    printf("Binario: ");
+    convertToBinary16(valor,0);
     return 0;
 }
 
