@@ -22,6 +22,7 @@ int main()
 {
     printf("Entregable 0\n Ingrese un número con decimal, que será validado posteriormente:\n");
     char numero[30];
+
     // Chequeo validez de la entrada
     if (scanf("%s",numero) !=1)
     {
@@ -30,6 +31,7 @@ int main()
     }
     int signo = 1;
     int i=0;
+
     // Chequeo signo
     if (numero[0] == '-')
     {
@@ -63,7 +65,7 @@ int main()
         }
     }
 
-    // REVISAR VALORES DE RANGO (No deberia fijarse mientras va extrayendo los digitos?)
+    // Chequeo rango
     if ((signo * parte_entera < (-128) || signo * parte_entera > 127))
     {
         printf("Fuera de rango");
@@ -75,6 +77,8 @@ int main()
     int16_t escalaEntera = (parte_entera << B); // corro B posiciones
     int16_t escalaDecimal = (parte_fraccionaria << B) / mult_fraccionario; // corro B posiciones / 10^ n digitos
     int16_t valor = signo * (escalaEntera + escalaDecimal);
+
+    // Imprimo resultado en hexa y binario
     printf("Hexadecimal: 0x%04X\n", (uint16_t) valor);
 
     printf("Binario: ");
