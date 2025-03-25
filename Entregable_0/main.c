@@ -49,13 +49,19 @@ int main()
     // Analizo la parte entera digito a digito
     int parte_entera =0;
 
+
+
+    /*
+     La parte entera si se podria hacer con
+     sscanf("%d",parte_entera)
+     y la fraccionaria por digito
+    */
+
     while(isdigit(numero[i]))
     {
         parte_entera = parte_entera * 10 + (numero[i] - '0'); // Conversion de digito a numero
         i++;
     }
-
-
 
     // Analizo la parte fraccionaria digito a digito
 
@@ -74,7 +80,7 @@ int main()
     }
 
 
-    // REVISAR VALORES DE RANGO (CON DECIMAL)
+    // REVISAR VALORES DE RANGO (No deberia fijarse mientras va extrayendo los digitos?)
     if ((signo * parte_entera < (-128) || signo * parte_entera > 127))
     {
         printf("Fuera de rango");
@@ -98,7 +104,7 @@ int main()
 
     printf("Hexadecimal: 0x%04X\n", (uint16_t) valor);
 
-    //  BORRAR ESTO
+    //  BORRAR ESTO, es solo para ver como anda
     printf("Binario: ");
     convertToBinary16(valor,0);
     return 0;
