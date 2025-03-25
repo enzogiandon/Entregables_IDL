@@ -1,4 +1,5 @@
 
 *.o
 /Entregable_0/bin
-Entregable_0/Entregable_0.depend
+*.depend
+*.layout
