@@ -16,7 +16,12 @@ int main() {
 
     do {
         mostrarMenu();
-        scanf("%d", &opcion);
+        if (scanf("%d", &opcion) != 1) {
+            printf("Entrada invalida. Intente de nuevo.\n");
+            while (getchar() != '\n'); // Limpiar buffer de entrada
+            continue;
+        }
+        while (getchar() != '\n'); // Limpiar buffer de entrada después de la lectura correcta
 
         switch (opcion) {
             case 1:

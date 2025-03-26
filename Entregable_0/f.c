@@ -20,7 +20,7 @@ void convertToBinary16(unsigned a,int i)
 }
 int main()
 {
-    printf("Entregable 0\n Ingrese un número con decimal, que será validado posteriormente:\n");
+    printf("Ingrese un número con decimal, que será validado posteriormente:\n");
     char numero[30];
 
     // Chequeo validez de la entrada
@@ -82,10 +82,11 @@ int main()
     printf("Hexadecimal: 0x%04X\n", (uint16_t) valor);
 
     printf("Binario: ");
-    if (signo ^ 1)
-        printf("%d",1);
-    else
+
+    if (signo == 1)
         printf("%d",0);
+    else
+        printf("%d",1);
 
     convertToBinary16(valor,0);
 
