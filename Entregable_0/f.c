@@ -18,7 +18,7 @@ void convertToBinary16(unsigned a,int i)
         printf("%d", a % 2);
     }
 }
-int main()
+int f()
 {
     printf("Ingrese un número con decimal, que será validado posteriormente:\n");
     char numero[30];

@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+void f();
+void g();
+void h();
 void mostrarMenu() {
     printf("\n=== MENU ===\n");
     printf("1. Compilar y ejecutar f.c\n");
@@ -25,25 +28,13 @@ int main() {
 
         switch (opcion) {
             case 1:
-                #ifdef _WIN32
-                    system("gcc -o f.exe f.c & f.exe"); // Windows
-                #else
-                    system("gcc -o f f.c && ./f"); // Linux/Mac
-                #endif
+                f();
                 break;
             case 2:
-                #ifdef _WIN32
-                    system("gcc -o g.exe g.c & g.exe"); // Windows
-                #else
-                    system("gcc -o g g.c && ./g"); // Linux/Mac
-                #endif
+                g();
                 break;
             case 3:
-                #ifdef _WIN32
-                    system("gcc -o h.exe h.c & h.exe"); // Windows
-                #else
-                    system("gcc -o h h.c && ./h"); // Linux/Mac
-                #endif
+                h();
                 break;
             case 4:
                 printf("Saliendo...\n");
