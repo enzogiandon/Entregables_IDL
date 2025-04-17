@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+#include <string.h>
 int validar (char hexa[20]){
     // Verifica que sea de la forma 0xHHHH
     if (hexa == NULL || strlen(hexa) != 6) {
@@ -14,6 +15,8 @@ int validar (char hexa[20]){
             return 1;
         }
     }
+
+
     return 0;
 
 //si retorna 0 el número es válido.
@@ -27,17 +30,23 @@ int g() {
         printf("entrada invalida");
         return 1;
     }
-    uint16_t nument;
-    sscanf(hexadecimal, "0x%04X", &nument);
-    int entero = (int16_t)nument >> 8;
-    int frac = (nument & 0xFF);
-    int fraccion=(frac*1000)/256;
+
+    int16_t valor_q7_8;
+    sscanf(hexadecimal, "0x%hx", (uint16_t *)&valor_q7_8);
+    int entero = valor_q7_8 / 256;
+    int frac = ((uint16_t)valor_q7_8) & 0xFF;
+    int fraccion = (frac * 1000) / 256;
+
+
 
 
     if (entero < -128 || entero > 127) {
         printf("El número está fuera del rango de Q(7,8).\n");
         return 1;
     }
+
+    printf("Debug: entero = %d, frac = %d, fraccion = %d\n", entero, frac, fraccion);
+
     printf("Valor decimal: %d.%03d\n", entero, fraccion);
     return 0;
 }
