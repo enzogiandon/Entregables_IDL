@@ -3,85 +3,116 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
 #define A 7
 #define B 8
-// Función para validar y convertir un número decimal a punto fijo
+
+// Convierte número decimal (string) a punto fijo Q7.8
 int16_t decimal_a_puntofijo(const char *numero) {
-    int signo = 1;
-    int i = 0;
-    // Chequeo signo
+    int signo = 1, i = 0;
+
     if (numero[0] == '-') {
         signo = -1;
         i++;
     }
-    // Analizo la parte entera digito a digito
+
     int parte_entera = 0;
-    while(isdigit(numero[i])) {
+    while (isdigit(numero[i])) {
         parte_entera = parte_entera * 10 + (numero[i] - '0');
         i++;
     }
-    // Analizo la parte fraccionaria digito a digito
-    int parte_fraccionaria = 0;
-    int mult_fraccionario = 1;
-    if ((numero[i] == '.') || (numero[i] == ',')) {
+
+    int parte_fraccionaria = 0, mult_fraccionario = 1;
+    if (numero[i] == '.' || numero[i] == ',') {
         i++;
-        while(isdigit(numero[i])) {
+        while (isdigit(numero[i])) {
             parte_fraccionaria = parte_fraccionaria * 10 + (numero[i] - '0');
             mult_fraccionario *= 10;
             i++;
         }
     }
-    // Validación de rango
-    if ((signo * parte_entera < (-128) || signo * parte_entera > 127)) {
+
+    if (numero[i] != '\0') {
+        printf("Entrada inválida: %s\n", numero);
+        exit(1);
+    }
+
+    if ((signo * parte_entera < -128) || (signo * parte_entera > 127)) {
         printf("Valor fuera de rango: %s\n", numero);
         exit(1);
     }
-    // Conversión a Q(7,8)
+
     int16_t escalaEntera = (parte_entera << B);
     int16_t escalaDecimal = (parte_fraccionaria << B) / mult_fraccionario;
+
     return signo * (escalaEntera + escalaDecimal);
 }
-// Función para convertir de punto fijo a decimal
+
+// Convierte de Q7.8 a decimal
 void puntofijo_a_decimal(int16_t valor) {
-    int entero = valor >> B;
-    int frac = (valor & 0xFF);
-    int fraccion = (frac * 1000) / 256; // 3 decimales
-    printf("Valor decimal: %d.%03d\n", entero, fraccion);
+    float resultado = valor / 256.0f;
+    printf("Valor decimal: %.6f\n", resultado);
 }
-//integración de todo
+
+// Pide y valida un número decimal como string
+void pedir_entrada(char *buffer, const char *mensaje) {
+    while (1) {
+        printf("%s", mensaje);
+        scanf("%s", buffer);
+
+        int i = 0;
+        if (buffer[0] == '-') i++;
+        int tiene_digito = 0;
+
+        while (isdigit(buffer[i])) {
+            tiene_digito = 1;
+            i++;
+        }
+
+        if ((buffer[i] == '.' || buffer[i] == ',') && isdigit(buffer[i + 1])) {
+            i++;
+            while (isdigit(buffer[i])) i++;
+        }
+
+        if (buffer[i] == '\0' && tiene_digito) break;
+        printf("Entrada inválida. Intente de nuevo.\n");
+    }
+}
+
+// Función principal
 int h() {
     char entrada[30];
-    int16_t m, b, x, y;
+    int16_t m, b, x;
+    int32_t y;
+
     // Ingreso y conversión de m
-    printf("Ingrese el valor de m (pendiente): ");
-    scanf("%s", entrada);
+    pedir_entrada(entrada, "Ingrese el valor de m (pendiente): ");
     m = decimal_a_puntofijo(entrada);
     printf("m en punto fijo: 0x%04X\n", (uint16_t)m);
+
     // Ingreso y conversión de b
-    printf("Ingrese el valor de b (ordenada al origen): ");
-    scanf("%s", entrada);
+    pedir_entrada(entrada, "Ingrese el valor de b (ordenada al origen): ");
     b = decimal_a_puntofijo(entrada);
-    printf("b en punto fijo: 0x%04X\n", (uint16_t)b);
+    printf("b en punto fijo (Q7.8): 0x%04X\n", (uint16_t)b);
 
     // Ingreso y conversión de x
-    printf("Ingrese el valor de x: ");
-    scanf("%s", entrada);
+    pedir_entrada(entrada, "Ingrese el valor de x: ");
     x = decimal_a_puntofijo(entrada);
     printf("x en punto fijo: 0x%04X\n", (uint16_t)x);
 
-    // Cálculo de y = m*x + b en punto fijo
-
-    // Primero multiplicamos m*x (resultado en Q(14,16))
+    // Cálculo de y = m * x + b
+    // m*x queda en Q(14,16)
     int32_t producto = (int32_t)m * (int32_t)x;
 
-    // Redondeamos y convertimos a Q(7,8) desplazando 8 bits
-    producto = (producto + (1 << 7)) >> 8;
+    // b lo subimos a Q(16,15)
+    int32_t b_ajustado = ((int32_t)b) << 7;
 
-    // Sumamos b (en Q(7,8))
-    y = (int16_t)producto + b;
+    // Sumamos en Q(16,15)
+    y = producto + b_ajustado;
 
-    printf("\nResultado y = m*x + b:\n");
-    printf("Hexadecimal: 0x%04X\n", (uint16_t)y);
-    puntofijo_a_decimal(y);
+    printf("\nResultado y = m*x + b (en Q16.15):\n");
+    printf("Hexadecimal: 0x%08X\n", (uint32_t)y);
+    printf("Valor decimal: %.6f\n", y / 32768.0f);  // 2^15 = 32768
+
     return 0;
 }
