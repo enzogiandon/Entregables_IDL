@@ -4,4 +4,8 @@
 *.depend
 *.layout
 *.exe
+<<<<<<< HEAD
 *.qws
+=======
+*.zip
+>>>>>>> 0eb28feab9bd4395da27f662d0d351058ff6d966
