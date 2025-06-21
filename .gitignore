@@ -8,22 +8,12 @@
 *.zip
 
 
-# Archivos generados por Quartus
-*.qmsg
-*.cdb
-*.hdb
-*.logdb
-*.rdb
-*.kpt
-*.smsg
-*.hier_info
+# Archivos generados por Quartus (TP1)
+
+*.rpt
+*.qws
 
 # Carpeta de base de datos
 db/
 incremental_db/
 output_files/
-
-# Archivos de programación
-*.sof
-*.pof
-*.jic
