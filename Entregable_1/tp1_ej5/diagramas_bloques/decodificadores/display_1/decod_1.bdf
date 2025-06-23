@@ -497,26 +497,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(text "A" (rect 482 56 490 68)(font "Arial" ))
-	(pt 496 72)
-	(pt 480 72)
-)
-(connector
-	(text "B" (rect 458 72 465 84)(font "Arial" ))
-	(pt 496 88)
-	(pt 456 88)
-)
-(connector
-	(text "C" (rect 434 88 442 100)(font "Arial" ))
-	(pt 496 104)
-	(pt 432 104)
-)
-(connector
-	(text "D" (rect 410 104 418 116)(font "Arial" ))
-	(pt 496 120)
-	(pt 408 120)
-)
-(connector
 	(text "A" (rect 482 192 490 204)(font "Arial" ))
 	(pt 496 208)
 	(pt 480 208)
