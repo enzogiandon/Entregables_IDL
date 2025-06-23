@@ -38,26 +38,27 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY display_2
+set_global_assignment -name TOP_LEVEL_ENTITY circuito
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:07:10  JUNE 15, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/g.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/f.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/e.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/d.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/c.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/b.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/segmentos_display_1/a.bdf
-set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_2.bdf
-set_global_assignment -name VECTOR_WAVEFORM_FILE sim.vwf
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Enzo/Documents/GitHub/Entregables_IDL/Entregable_1/tp1_ej5/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/g.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/f.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/e.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/d.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/c.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/b.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_1/segmentos/a.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/displays/display_2/calcular_decenas.bdf
+set_global_assignment -name BDF_FILE diagramas_bloques/circuito.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE sim.vwf
