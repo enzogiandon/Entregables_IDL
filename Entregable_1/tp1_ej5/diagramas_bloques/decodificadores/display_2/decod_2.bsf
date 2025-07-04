@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "symbol" (version "1.2"))
 (symbol
 	(rect 16 16 112 176)
-	(text "decod_1" (rect 5 0 54 14)(font "Arial" (font_size 8)))
+	(text "decod_2" (rect 5 0 54 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 144 25 156)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -43,13 +43,6 @@ applicable agreement for further details.
 		(text "C" (rect 0 0 8 14)(font "Arial" (font_size 8)))
 		(text "C" (rect 21 59 29 73)(font "Arial" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "D" (rect 0 0 8 14)(font "Arial" (font_size 8)))
-		(text "D" (rect 21 75 29 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
 	)
 	(port
 		(pt 96 32)
