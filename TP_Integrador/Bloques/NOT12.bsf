@@ -18,9 +18,26 @@ programming logic devices manufactured by Altera and sold by
 Altera or its authorized distributors.  Please refer to the 
 applicable agreement for further details.
 */
-(header "graphic" (version "1.4"))
-(connector
-	(text "Hola Mundo" (rect 218 88 279 99)(font "Arial" ))
-	(pt 208 104)
-	(pt 480 104)
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 176 112)
+	(text "NOT12" (rect 5 0 43 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 80 25 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "IN[11..0]" (rect 0 0 46 14)(font "Arial" (font_size 8)))
+		(text "IN[11..0]" (rect 21 27 67 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 160 32)
+		(output)
+		(text "OUT[11..0]" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "OUT[11..0]" (rect 79 27 139 41)(font "Arial" (font_size 8)))
+		(line (pt 160 32)(pt 144 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 144 80))
+	)
 )

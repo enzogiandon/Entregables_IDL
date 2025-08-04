@@ -214,8 +214,8 @@ applicable agreement for further details.
 	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 472 48 672 176)
-	(text "Registro_carga" (rect 5 0 92 14)(font "Arial" (font_size 8)))
+	(rect 464 48 664 176)
+	(text "Registro_12b" (rect 5 0 80 14)(font "Arial" (font_size 8)))
 	(text "reg_ini" (rect 8 112 39 124)(font "Arial" ))
 	(port
 		(pt 0 32)
@@ -258,51 +258,8 @@ applicable agreement for further details.
 )
 (symbol
 	(rect 464 216 664 344)
-	(text "Registro_carga" (rect 5 0 92 14)(font "Arial" (font_size 8)))
+	(text "Registro_12b" (rect 5 0 80 14)(font "Arial" (font_size 8)))
 	(text "reg_fin" (rect 8 112 42 124)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "DATA[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
-		(text "DATA[11..0]" (rect 21 27 90 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
-		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 0 64)
-		(input)
-		(text "RECARGAR" (rect 0 0 68 14)(font "Arial" (font_size 8)))
-		(text "RECARGAR" (rect 21 59 89 73)(font "Arial" (font_size 8)))
-		(line (pt 0 64)(pt 16 64))
-	)
-	(port
-		(pt 0 80)
-		(input)
-		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
-		(text "LOAD" (rect 21 75 55 89)(font "Arial" (font_size 8)))
-		(line (pt 0 80)(pt 16 80))
-	)
-	(port
-		(pt 200 32)
-		(output)
-		(text "VALOR[0..11]" (rect 0 0 79 14)(font "Arial" (font_size 8)))
-		(text "VALOR[0..11]" (rect 100 27 179 41)(font "Arial" (font_size 8)))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 184 112))
-	)
-)
-(symbol
-	(rect 464 48 664 176)
-	(text "Registro_carga" (rect 5 0 92 14)(font "Arial" (font_size 8)))
-	(text "reg_ini1" (rect 8 112 45 124)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
@@ -363,7 +320,7 @@ applicable agreement for further details.
 	(block_io "PAUSA" (output))
 )
 (block
-	(rect 808 512 1152 648)
+	(rect 800 528 1144 664)
 	(text "MUX_SALIDA" (rect 5 5 82 19)(font "Arial" (font_size 8)))	(text "inst8" (rect 5 121 28 133)(font "Arial" ))	(block_io "CUENTA" (input))
 	(block_io "RECARGAR" (input))
 	(block_io "DATA[11..0]" (output))
@@ -375,8 +332,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(text "VALOR_INI[11..0]" (rect 696 64 785 76)(font "Arial" ))
+	(text "VALOR_INI[11..0]" (rect 688 64 777 76)(font "Arial" ))
 	(pt 712 80)
-	(pt 672 80)
+	(pt 664 80)
 	(bus)
 )
