@@ -907,15 +907,6 @@ applicable agreement for further details.
 	(pt 640 160)
 )
 (connector
-	(text "DATA[5]" (rect 728 104 769 116)(font "Arial" ))
-	(pt 752 160)
-	(pt 744 160)
-)
-(connector
-	(pt 744 120)
-	(pt 744 160)
-)
-(connector
 	(text "DATA[7]" (rect 936 104 977 116)(font "Arial" ))
 	(pt 960 160)
 	(pt 952 160)
@@ -1022,18 +1013,6 @@ applicable agreement for further details.
 	(pt 624 248)
 )
 (connector
-	(pt 752 176)
-	(pt 728 176)
-)
-(connector
-	(pt 728 248)
-	(pt 728 176)
-)
-(connector
-	(pt 624 248)
-	(pt 728 248)
-)
-(connector
 	(pt 960 176)
 	(pt 936 176)
 )
@@ -1110,14 +1089,6 @@ applicable agreement for further details.
 	(pt 640 192)
 )
 (connector
-	(pt 752 192)
-	(pt 744 192)
-)
-(connector
-	(pt 744 192)
-	(pt 744 304)
-)
-(connector
 	(pt 960 192)
 	(pt 952 192)
 )
@@ -1176,10 +1147,6 @@ applicable agreement for further details.
 (connector
 	(pt 536 304)
 	(pt 640 304)
-)
-(connector
-	(pt 640 304)
-	(pt 744 304)
 )
 (connector
 	(pt 952 304)
@@ -1273,14 +1240,6 @@ applicable agreement for further details.
 (connector
 	(pt 1032 160)
 	(pt 1032 80)
-)
-(connector
-	(pt 816 160)
-	(pt 824 160)
-)
-(connector
-	(pt 824 160)
-	(pt 824 80)
 )
 (connector
 	(pt 712 160)
@@ -1386,55 +1345,6 @@ applicable agreement for further details.
 	(pt 1408 216)
 )
 (connector
-	(pt 848 120)
-	(pt 848 160)
-)
-(connector
-	(text "DATA[6]" (rect 832 104 873 116)(font "Arial" ))
-	(pt 848 160)
-	(pt 856 160)
-)
-(connector
-	(pt 832 176)
-	(pt 856 176)
-)
-(connector
-	(pt 832 248)
-	(pt 832 176)
-)
-(connector
-	(pt 848 192)
-	(pt 856 192)
-)
-(connector
-	(pt 848 304)
-	(pt 848 192)
-)
-(connector
-	(pt 928 160)
-	(pt 920 160)
-)
-(connector
-	(pt 928 80)
-	(pt 928 160)
-)
-(connector
-	(pt 728 248)
-	(pt 832 248)
-)
-(connector
-	(pt 832 248)
-	(pt 936 248)
-)
-(connector
-	(pt 744 304)
-	(pt 848 304)
-)
-(connector
-	(pt 848 304)
-	(pt 952 304)
-)
-(connector
 	(pt 1096 216)
 	(pt 1096 352)
 )
@@ -1447,28 +1357,8 @@ applicable agreement for further details.
 	(pt 1096 352)
 )
 (connector
-	(pt 888 216)
-	(pt 888 352)
-)
-(connector
-	(pt 888 352)
-	(pt 992 352)
-)
-(connector
-	(pt 784 216)
-	(pt 784 352)
-)
-(connector
-	(pt 784 352)
-	(pt 888 352)
-)
-(connector
 	(pt 680 216)
 	(pt 680 352)
-)
-(connector
-	(pt 680 352)
-	(pt 784 352)
 )
 (connector
 	(pt 576 216)
@@ -1535,28 +1425,8 @@ applicable agreement for further details.
 	(pt 1096 48)
 )
 (connector
-	(pt 888 48)
-	(pt 888 136)
-)
-(connector
-	(pt 888 48)
-	(pt 992 48)
-)
-(connector
-	(pt 784 136)
-	(pt 784 48)
-)
-(connector
-	(pt 784 48)
-	(pt 888 48)
-)
-(connector
 	(pt 680 136)
 	(pt 680 48)
-)
-(connector
-	(pt 680 48)
-	(pt 784 48)
 )
 (connector
 	(pt 576 136)
@@ -1625,6 +1495,136 @@ applicable agreement for further details.
 (connector
 	(pt 264 352)
 	(pt 368 352)
+)
+(connector
+	(text "DATA[5]" (rect 728 104 769 116)(font "Arial" ))
+	(pt 744 160)
+	(pt 752 160)
+)
+(connector
+	(pt 744 120)
+	(pt 744 160)
+)
+(connector
+	(pt 728 176)
+	(pt 752 176)
+)
+(connector
+	(pt 728 248)
+	(pt 728 176)
+)
+(connector
+	(pt 744 192)
+	(pt 752 192)
+)
+(connector
+	(pt 744 304)
+	(pt 744 192)
+)
+(connector
+	(pt 824 160)
+	(pt 816 160)
+)
+(connector
+	(pt 824 80)
+	(pt 824 160)
+)
+(connector
+	(pt 784 352)
+	(pt 784 216)
+)
+(connector
+	(pt 784 48)
+	(pt 784 136)
+)
+(connector
+	(pt 624 248)
+	(pt 728 248)
+)
+(connector
+	(pt 640 304)
+	(pt 744 304)
+)
+(connector
+	(pt 680 352)
+	(pt 784 352)
+)
+(connector
+	(pt 680 48)
+	(pt 784 48)
+)
+(connector
+	(pt 848 120)
+	(pt 848 160)
+)
+(connector
+	(text "DATA[6]" (rect 832 104 873 116)(font "Arial" ))
+	(pt 848 160)
+	(pt 856 160)
+)
+(connector
+	(pt 832 176)
+	(pt 856 176)
+)
+(connector
+	(pt 832 248)
+	(pt 832 176)
+)
+(connector
+	(pt 848 192)
+	(pt 856 192)
+)
+(connector
+	(pt 848 304)
+	(pt 848 192)
+)
+(connector
+	(pt 928 160)
+	(pt 920 160)
+)
+(connector
+	(pt 928 80)
+	(pt 928 160)
+)
+(connector
+	(pt 888 352)
+	(pt 888 216)
+)
+(connector
+	(pt 888 48)
+	(pt 888 136)
+)
+(connector
+	(pt 728 248)
+	(pt 832 248)
+)
+(connector
+	(pt 832 248)
+	(pt 936 248)
+)
+(connector
+	(pt 744 304)
+	(pt 848 304)
+)
+(connector
+	(pt 848 304)
+	(pt 952 304)
+)
+(connector
+	(pt 784 352)
+	(pt 888 352)
+)
+(connector
+	(pt 888 352)
+	(pt 992 352)
+)
+(connector
+	(pt 784 48)
+	(pt 888 48)
+)
+(connector
+	(pt 888 48)
+	(pt 992 48)
 )
 (junction (pt 312 248))
 (junction (pt 416 248))

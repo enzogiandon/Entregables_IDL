@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 64 376 80)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "b[2..0]" (rect 5 0 37 12)(font "Arial" ))
+	(text "b[2..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -39,7 +39,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 160 376 176)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD_I" (rect 5 0 44 12)(font "Arial" ))
+	(text "LOAD_I" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 184 376 200)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "LOAD_F" (rect 5 0 48 12)(font "Arial" ))
+	(text "LOAD_F" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -71,7 +71,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 208 376 224)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CONTINUAR" (rect 5 0 72 12)(font "Arial" ))
+	(text "CONTINUAR" (rect 5 0 71 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -87,7 +87,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 240 376 256)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RECARGAR" (rect 5 0 68 12)(font "Arial" ))
+	(text "RECARGAR" (rect 5 0 67 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -103,7 +103,7 @@ applicable agreement for further details.
 	(input)
 	(rect 208 272 376 288)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CLOCK" (rect 5 0 43 12)(font "Arial" ))
+	(text "CLOCK" (rect 5 0 42 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -135,7 +135,7 @@ applicable agreement for further details.
 	(input)
 	(rect 200 424 368 440)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "UP_DOWN" (rect 5 0 62 12)(font "Arial" ))
+	(text "UP_DOWN" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -197,7 +197,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 200 96 376 112)
+	(rect 200 112 376 128)
 	(text "BIDIR" (rect 151 0 175 10)(font "Arial" (font_size 6)))
 	(text "DATA[11..0]" (rect 26 0 86 12)(font "Arial" ))
 	(pt 176 8)
@@ -299,6 +299,49 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 184 112))
 	)
 )
+(symbol
+	(rect 464 48 664 176)
+	(text "Registro_carga" (rect 5 0 92 14)(font "Arial" (font_size 8)))
+	(text "reg_ini1" (rect 8 112 45 124)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "DATA[11..0]" (rect 0 0 69 14)(font "Arial" (font_size 8)))
+		(text "DATA[11..0]" (rect 21 27 90 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "CLK" (rect 0 0 23 14)(font "Arial" (font_size 8)))
+		(text "CLK" (rect 21 43 44 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "RECARGAR" (rect 0 0 68 14)(font "Arial" (font_size 8)))
+		(text "RECARGAR" (rect 21 59 89 73)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "LOAD" (rect 0 0 34 14)(font "Arial" (font_size 8)))
+		(text "LOAD" (rect 21 75 55 89)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 200 32)
+		(output)
+		(text "VALOR[0..11]" (rect 0 0 79 14)(font "Arial" (font_size 8)))
+		(text "VALOR[0..11]" (rect 100 27 179 41)(font "Arial" (font_size 8)))
+		(line (pt 200 32)(pt 184 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 184 112))
+	)
+)
 (block
 	(rect 808 352 1144 488)
 	(text "DETECTOR DE ERROR" (rect 5 5 131 19)(font "Arial" (font_size 8)))	(text "inst" (rect 5 121 22 133)(font "Arial" ))	(block_io "valor_ini" (input))
@@ -320,20 +363,20 @@ applicable agreement for further details.
 	(block_io "PAUSA" (output))
 )
 (block
-	(rect 800 512 1144 648)
+	(rect 808 512 1152 648)
 	(text "MUX_SALIDA" (rect 5 5 82 19)(font "Arial" (font_size 8)))	(text "inst8" (rect 5 121 28 133)(font "Arial" ))	(block_io "CUENTA" (input))
 	(block_io "RECARGAR" (input))
 	(block_io "DATA[11..0]" (output))
 )
 (connector
-	(text "VALOR_FIN[11..0]" (rect 664 232 757 244)(font "Arial" ))
+	(text "VALOR_FIN[11..0]" (rect 688 232 781 244)(font "Arial" ))
 	(pt 664 248)
 	(pt 712 248)
 	(bus)
 )
 (connector
 	(text "VALOR_INI[11..0]" (rect 696 64 785 76)(font "Arial" ))
+	(pt 712 80)
 	(pt 672 80)
-	(pt 720 80)
 	(bus)
 )
