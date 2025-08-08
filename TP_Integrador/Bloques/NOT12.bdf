@@ -469,7 +469,7 @@ applicable agreement for further details.
 	(pt 528 264)
 )
 (connector
-	(text "OUT[10]" (rect 512 296 553 308)(font "Arial" ))
+	(text "OUT[11]" (rect 512 296 553 308)(font "Arial" ))
 	(pt 496 312)
 	(pt 528 312)
 )

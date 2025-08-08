@@ -239,7 +239,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 376 144 552 240)
+	(rect 368 144 544 240)
 	(text "Comparador" (rect 5 0 74 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
 	(port
