@@ -76,7 +76,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY sumadorCompleto_4bits
+set_global_assignment -name TOP_LEVEL_ENTITY sumador12bits
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:38:41  AUGUST 03, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -85,6 +85,8 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Enzo/Documents/GitHub/Entregables_IDL/TP_Integrador/simulation/qsim/" -section_id eda_simulation
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name BDF_FILE Bloques/sum4bits.bdf
+set_global_assignment -name SEARCH_PATH "c:\\users\\enzo\\documents\\github\\entregables_idl\\tp_integrador\\bloques\\simbolos"
 set_global_assignment -name BDF_FILE Bloques/top.bdf
 set_global_assignment -name BDF_FILE Bloques/sumador12bits.bdf
 set_global_assignment -name BDF_FILE Bloques/Registro_12b.bdf
@@ -97,7 +99,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE Bloques/Waveform1.vwf
 set_global_assignment -name BDF_FILE Bloques/sumadorCompleto_4bits.bdf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform1.vwf
-set_global_assignment -name BDF_FILE Bloques/sum4bits.bdf
+set_global_assignment -name BDF_FILE "Bloques/sumadorCompleto(4bits).bdf"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
