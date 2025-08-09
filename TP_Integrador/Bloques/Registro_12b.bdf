@@ -37,22 +37,6 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -128 264 40 280)
-	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "RECARGAR" (rect 5 0 67 12)(font "Arial" ))
-	(pt 168 8)
-	(drawing
-		(line (pt 84 12)(pt 109 12))
-		(line (pt 84 4)(pt 109 4))
-		(line (pt 113 8)(pt 168 8))
-		(line (pt 84 12)(pt 84 4))
-		(line (pt 109 4)(pt 113 8))
-		(line (pt 109 12)(pt 113 8))
-	)
-	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
-)
-(pin
-	(input)
 	(rect -128 200 40 216)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "DATA[11..0]" (rect 5 0 65 12)(font "Arial" ))
@@ -784,38 +768,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 80 280 144 328)
-	(text "AND2" (rect 1 0 25 10)(font "Arial" (font_size 6)))
-	(text "and_recarga" (rect 3 37 63 49)(font "Arial" ))
-	(port
-		(pt 0 16)
-		(input)
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(text "IN1" (rect 2 7 19 19)(font "Courier New" (bold))(invisible))
-		(line (pt 0 16)(pt 14 16))
-	)
-	(port
-		(pt 0 32)
-		(input)
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(text "IN2" (rect 2 23 19 35)(font "Courier New" (bold))(invisible))
-		(line (pt 0 32)(pt 14 32))
-	)
-	(port
-		(pt 64 24)
-		(output)
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(line (pt 42 24)(pt 64 24))
-	)
-	(drawing
-		(line (pt 14 12)(pt 30 12))
-		(line (pt 14 37)(pt 31 37))
-		(line (pt 14 12)(pt 14 37))
-		(arc (pt 31 37)(pt 30 12)(rect 18 12 43 37))
-	)
-)
-(symbol
 	(rect 168 368 200 384)
 	(text "VCC" (rect 7 6 27 16)(font "Arial" (font_size 6)))
 	(text "inst" (rect 3 -1 20 11)(font "Arial" )(invisible))
@@ -1163,34 +1115,6 @@ applicable agreement for further details.
 (connector
 	(pt 208 240)
 	(pt 208 248)
-)
-(connector
-	(pt 40 272)
-	(pt 72 272)
-)
-(connector
-	(pt 40 304)
-	(pt 56 304)
-)
-(connector
-	(pt 72 296)
-	(pt 80 296)
-)
-(connector
-	(pt 72 272)
-	(pt 72 296)
-)
-(connector
-	(pt 56 312)
-	(pt 80 312)
-)
-(connector
-	(pt 56 304)
-	(pt 56 312)
-)
-(connector
-	(pt 144 304)
-	(pt 224 304)
 )
 (connector
 	(pt 224 304)
@@ -1625,6 +1549,10 @@ applicable agreement for further details.
 (connector
 	(pt 1408 56)
 	(pt 1408 136)
+)
+(connector
+	(pt 40 304)
+	(pt 224 304)
 )
 (junction (pt 312 248))
 (junction (pt 416 248))

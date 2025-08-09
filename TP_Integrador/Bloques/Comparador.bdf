@@ -55,7 +55,7 @@ applicable agreement for further details.
 	(input)
 	(rect -248 312 -80 328)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "UP_DOWN" (rect 5 0 62 12)(font "Arial" ))
+	(text "UP_DOWN" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
