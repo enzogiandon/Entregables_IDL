@@ -275,35 +275,6 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 272 344 456 440)
-	(text "xor33" (rect 5 0 38 14)(font "Arial" (font_size 8)))
-	(text "inst" (rect 8 80 25 92)(font "Arial" ))
-	(port
-		(pt 0 32)
-		(input)
-		(text "b_in[2..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
-		(text "b_in[2..0]" (rect 21 27 72 41)(font "Arial" (font_size 8)))
-		(line (pt 0 32)(pt 16 32)(line_width 3))
-	)
-	(port
-		(pt 0 48)
-		(input)
-		(text "UP_DOWN" (rect 0 0 60 14)(font "Arial" (font_size 8)))
-		(text "UP_DOWN" (rect 21 43 81 57)(font "Arial" (font_size 8)))
-		(line (pt 0 48)(pt 16 48))
-	)
-	(port
-		(pt 184 32)
-		(output)
-		(text "b_out[11..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
-		(text "b_out[11..0]" (rect 96 27 163 41)(font "Arial" (font_size 8)))
-		(line (pt 184 32)(pt 168 32)(line_width 3))
-	)
-	(drawing
-		(rectangle (rect 16 16 168 80))
-	)
-)
-(symbol
 	(rect 624 144 800 240)
 	(text "Comparador" (rect 5 0 74 14)(font "Arial" (font_size 8)))
 	(text "inst1" (rect 8 80 31 92)(font "Arial" ))
@@ -354,7 +325,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -379,7 +350,7 @@ applicable agreement for further details.
 		(pt 48 16)
 		(output)
 		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 32 7 46 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
 		(line (pt 39 16)(pt 48 16))
 	)
 	(drawing
@@ -411,7 +382,7 @@ applicable agreement for further details.
 		(pt 64 24)
 		(output)
 		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
-		(text "OUT" (rect 48 15 62 27)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 48 15 65 27)(font "Courier New" (bold))(invisible))
 		(line (pt 42 24)(pt 64 24))
 	)
 	(drawing
@@ -466,6 +437,35 @@ applicable agreement for further details.
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
 		(line (pt 0 0)(pt 0 0))
+	)
+)
+(symbol
+	(rect 272 344 456 440)
+	(text "xor33" (rect 5 0 38 14)(font "Arial" (font_size 8)))
+	(text "inversor_suma_resta" (rect 8 80 111 92)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "b_in[2..0]" (rect 0 0 51 14)(font "Arial" (font_size 8)))
+		(text "b_in[2..0]" (rect 21 27 72 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "UP_DOWN" (rect 0 0 60 14)(font "Arial" (font_size 8)))
+		(text "UP_DOWN" (rect 21 43 81 57)(font "Arial" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 184 32)
+		(output)
+		(text "b_out[11..0]" (rect 0 0 67 14)(font "Arial" (font_size 8)))
+		(text "b_out[11..0]" (rect 96 27 163 41)(font "Arial" (font_size 8)))
+		(line (pt 184 32)(pt 168 32)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 168 80))
 	)
 )
 (connector
@@ -716,3 +716,6 @@ applicable agreement for further details.
 (junction (pt 496 392))
 (junction (pt 560 376))
 (junction (pt 64 288))
+(text "Hay que sacar las salidas de más, son variables intermedias." (rect 864 432 1212 446)(font "Arial" (font_size 8)))
+(text "Depende si es UP o DOWN tiene que sumar o restar" (rect 272 296 567 310)(font "Arial" (font_size 8)))
+(text "Rellena con 0 o 1 el resto de bits" (rect 272 320 457 334)(font "Arial" (font_size 8)))
