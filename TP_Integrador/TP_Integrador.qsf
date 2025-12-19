@@ -76,7 +76,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV GX"
 set_global_assignment -name DEVICE auto
-set_global_assignment -name TOP_LEVEL_ENTITY integrador
+set_global_assignment -name TOP_LEVEL_ENTITY main
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:38:41  AUGUST 03, 2025"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -87,10 +87,6 @@ set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/Enzo/Documen
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name SEARCH_PATH "c:\\users\\enzo\\documents\\github\\entregables_idl\\tp_integrador\\bloques\\simbolos"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
 set_global_assignment -name BDF_FILE Bloques/not3.bdf
 set_global_assignment -name BDF_FILE Bloques/sumador4bits.bdf
 set_global_assignment -name BDF_FILE Bloques/registro12b.bdf
@@ -114,4 +110,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/sumador12bits.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/comparador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/contador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/contador_down.vwf
-set_global_assignment -name BDF_FILE Bloques/main.bdf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
