@@ -118,3 +118,7 @@ set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/comparador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/contador.vwf
 set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/contador_down.vwf
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/main.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/Pruebas_main/main.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/Pruebas_main/contadorUP2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulaciones/Pruebas_main/contadorDOWN5.vwf
