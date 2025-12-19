@@ -468,6 +468,21 @@ applicable agreement for further details.
 		(rectangle (rect 16 16 168 80))
 	)
 )
+(symbol
+	(rect 184 176 216 192)
+	(text "VCC" (rect 7 0 27 10)(font "Arial" (font_size 6)))
+	(text "inst" (rect 3 5 20 17)(font "Arial" )(invisible))
+	(port
+		(pt 16 16)
+		(output)
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 19 7 24 19)(font "Courier New" (bold))(invisible))
+		(line (pt 16 16)(pt 16 8))
+	)
+	(drawing
+		(line (pt 8 8)(pt 24 8))
+	)
+)
 (connector
 	(pt 632 408)
 	(pt 616 408)
@@ -684,20 +699,8 @@ applicable agreement for further details.
 	(bus)
 )
 (connector
-	(pt 168 288)
-	(pt 168 200)
-)
-(connector
 	(pt 0 288)
 	(pt 64 288)
-)
-(connector
-	(pt 64 288)
-	(pt 168 288)
-)
-(connector
-	(pt 168 200)
-	(pt 280 200)
 )
 (connector
 	(pt 864 96)
@@ -709,13 +712,20 @@ applicable agreement for further details.
 	(pt 864 376)
 	(bus)
 )
+(connector
+	(pt 280 200)
+	(pt 200 200)
+)
+(connector
+	(pt 200 200)
+	(pt 200 192)
+)
 (junction (pt 184 392))
 (junction (pt 584 464))
 (junction (pt 560 192))
 (junction (pt 864 224))
 (junction (pt 496 392))
 (junction (pt 560 376))
-(junction (pt 64 288))
 (text "Hay que sacar las salidas de más, son variables intermedias." (rect 864 432 1212 446)(font "Arial" (font_size 8)))
 (text "Depende si es UP o DOWN tiene que sumar o restar" (rect 272 296 567 310)(font "Arial" (font_size 8)))
 (text "Rellena con 0 o 1 el resto de bits" (rect 272 320 457 334)(font "Arial" (font_size 8)))
