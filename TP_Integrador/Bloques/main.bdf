@@ -21,7 +21,7 @@ applicable agreement for further details.
 (header "graphic" (version "1.4"))
 (pin
 	(input)
-	(rect -120 496 48 512)
+	(rect 56 456 224 472)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LOAD_I" (rect 5 0 43 12)(font "Arial" ))
 	(pt 168 8)
@@ -37,7 +37,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -120 512 48 528)
+	(rect 56 472 224 488)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "LOAD_F" (rect 5 0 47 12)(font "Arial" ))
 	(pt 168 8)
@@ -53,7 +53,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 88 544 256 560)
+	(rect 264 504 432 520)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "START" (rect 5 0 39 12)(font "Arial" ))
 	(pt 168 8)
@@ -69,7 +69,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 88 560 256 576)
+	(rect 264 520 432 536)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "RECARGAR" (rect 5 0 67 12)(font "Arial" ))
 	(pt 168 8)
@@ -85,7 +85,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect -120 576 48 592)
+	(rect 56 536 224 552)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CLK" (rect 5 0 26 12)(font "Arial" ))
 	(pt 168 8)
@@ -101,7 +101,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 88 608 256 624)
+	(rect 264 568 432 584)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "CONTINUAR" (rect 5 0 71 12)(font "Arial" ))
 	(pt 168 8)
@@ -117,7 +117,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 24 384 192 400)
+	(rect 200 344 368 360)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "b[2..0]" (rect 5 0 36 12)(font "Arial" ))
 	(pt 168 8)
@@ -133,7 +133,7 @@ applicable agreement for further details.
 )
 (pin
 	(input)
-	(rect 24 456 192 472)
+	(rect 200 416 368 432)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
 	(text "UP_DOWN" (rect 5 0 61 12)(font "Arial" ))
 	(pt 168 8)
@@ -149,7 +149,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 184 696 360 712)
+	(rect 360 656 536 672)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q2" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -165,7 +165,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 184 712 360 728)
+	(rect 360 672 536 688)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q1" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -181,7 +181,7 @@ applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 184 728 360 744)
+	(rect 360 688 536 704)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
 	(text "Q0" (rect 90 0 104 12)(font "Arial" ))
 	(pt 0 8)
@@ -309,7 +309,7 @@ applicable agreement for further details.
 )
 (pin
 	(bidir)
-	(rect 16 424 192 440)
+	(rect 192 384 368 400)
 	(text "BIDIR" (rect 151 0 175 10)(font "Arial" (font_size 6)))
 	(text "DATA[11..0]" (rect 5 0 65 12)(font "Arial" ))
 	(pt 176 8)
@@ -326,7 +326,7 @@ applicable agreement for further details.
 	(text "VCC" (rect 152 7 172 17)(font "Arial" (font_size 6)))
 )
 (symbol
-	(rect 304 472 440 664)
+	(rect 480 432 616 624)
 	(text "mef" (rect 5 0 26 14)(font "Arial" (font_size 8)))
 	(text "inst" (rect 8 176 25 188)(font "Arial" ))
 	(port
@@ -411,7 +411,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -56 672 -8 704)
+	(rect 120 632 168 664)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst2" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -436,7 +436,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -56 704 -8 736)
+	(rect 120 664 168 696)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst3" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -461,7 +461,7 @@ applicable agreement for further details.
 	)
 )
 (symbol
-	(rect -56 736 -8 768)
+	(rect 120 696 168 728)
 	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
 	(text "inst4" (rect 3 21 26 33)(font "Arial" ))
 	(port
@@ -1101,96 +1101,96 @@ applicable agreement for further details.
 	(pt 24 272)
 )
 (connector
-	(pt 304 552)
-	(pt 256 552)
+	(pt 480 512)
+	(pt 432 512)
 )
 (connector
-	(pt 304 568)
-	(pt 256 568)
+	(pt 480 528)
+	(pt 432 528)
 )
 (connector
-	(pt 304 616)
-	(pt 256 616)
+	(pt 480 576)
+	(pt 432 576)
 )
 (connector
-	(text "q2" (rect 448 488 459 500)(font "Arial" ))
-	(pt 440 504)
-	(pt 504 504)
+	(text "q2" (rect 624 448 635 460)(font "Arial" ))
+	(pt 616 464)
+	(pt 680 464)
 )
 (connector
-	(text "q1" (rect 448 504 459 516)(font "Arial" ))
-	(pt 440 520)
-	(pt 504 520)
+	(text "q1" (rect 624 464 635 476)(font "Arial" ))
+	(pt 616 480)
+	(pt 680 480)
 )
 (connector
-	(text "q0" (rect 449 520 460 532)(font "Arial" ))
-	(pt 440 536)
-	(pt 504 536)
+	(text "q0" (rect 625 480 636 492)(font "Arial" ))
+	(pt 616 496)
+	(pt 680 496)
 )
 (connector
-	(text "q2" (rect -80 672 -69 684)(font "Arial" ))
-	(pt -56 688)
-	(pt -88 688)
+	(text "q2" (rect 96 632 107 644)(font "Arial" ))
+	(pt 120 648)
+	(pt 88 648)
 )
 (connector
-	(text "q1" (rect -80 704 -69 716)(font "Arial" ))
-	(pt -56 720)
-	(pt -88 720)
+	(text "q1" (rect 96 664 107 676)(font "Arial" ))
+	(pt 120 680)
+	(pt 88 680)
 )
 (connector
-	(text "q0" (rect -80 736 -69 748)(font "Arial" ))
-	(pt -56 752)
-	(pt -88 752)
+	(text "q0" (rect 96 696 107 708)(font "Arial" ))
+	(pt 120 712)
+	(pt 88 712)
 )
 (connector
-	(text "/q2" (rect 0 672 15 684)(font "Arial" ))
-	(pt -8 688)
-	(pt 24 688)
+	(text "/q2" (rect 176 632 191 644)(font "Arial" ))
+	(pt 168 648)
+	(pt 200 648)
 )
 (connector
-	(text "/q1" (rect 0 704 15 716)(font "Arial" ))
-	(pt -8 720)
-	(pt 24 720)
+	(text "/q1" (rect 176 664 191 676)(font "Arial" ))
+	(pt 168 680)
+	(pt 200 680)
 )
 (connector
-	(text "/q0" (rect 1 736 16 748)(font "Arial" ))
-	(pt -8 752)
-	(pt 24 752)
+	(text "/q0" (rect 177 696 192 708)(font "Arial" ))
+	(pt 168 712)
+	(pt 200 712)
 )
 (connector
-	(text "CLK" (rect 56 568 77 580)(font "Arial" ))
-	(pt 48 584)
-	(pt 80 584)
+	(text "CLK" (rect 232 528 253 540)(font "Arial" ))
+	(pt 224 544)
+	(pt 256 544)
 )
 (connector
-	(text "CLK" (rect 280 568 301 580)(font "Arial" ))
-	(pt 256 584)
-	(pt 304 584)
+	(text "CLK" (rect 456 528 477 540)(font "Arial" ))
+	(pt 432 544)
+	(pt 480 544)
 )
 (connector
-	(text "LOAD_F" (rect 49 504 91 516)(font "Arial" ))
-	(pt 48 520)
-	(pt 80 520)
+	(text "LOAD_F" (rect 225 464 267 476)(font "Arial" ))
+	(pt 224 480)
+	(pt 256 480)
 )
 (connector
-	(text "LOAD_F" (rect 264 504 306 516)(font "Arial" ))
-	(pt 304 520)
-	(pt 256 520)
+	(text "LOAD_F" (rect 440 464 482 476)(font "Arial" ))
+	(pt 480 480)
+	(pt 432 480)
 )
 (connector
-	(text "q2" (rect 168 688 179 700)(font "Arial" ))
-	(pt 184 704)
-	(pt 160 704)
+	(text "q2" (rect 344 648 355 660)(font "Arial" ))
+	(pt 360 664)
+	(pt 336 664)
 )
 (connector
-	(text "q1" (rect 168 704 179 716)(font "Arial" ))
-	(pt 184 720)
-	(pt 160 720)
+	(text "q1" (rect 344 664 355 676)(font "Arial" ))
+	(pt 360 680)
+	(pt 336 680)
 )
 (connector
-	(text "q0" (rect 168 720 179 732)(font "Arial" ))
-	(pt 184 736)
-	(pt 160 736)
+	(text "q0" (rect 344 680 355 692)(font "Arial" ))
+	(pt 360 696)
+	(pt 336 696)
 )
 (connector
 	(text "CLK" (rect 864 72 885 84)(font "Arial" ))
@@ -1236,9 +1236,9 @@ applicable agreement for further details.
 	(pt 856 200)
 )
 (connector
-	(text "FIN" (rect 264 584 282 596)(font "Arial" ))
-	(pt 304 600)
-	(pt 256 600)
+	(text "FIN" (rect 440 544 458 556)(font "Arial" ))
+	(pt 480 560)
+	(pt 432 560)
 )
 (connector
 	(text "DATA[11..0]" (rect 1680 200 1740 212)(font "Arial" ))
@@ -1345,9 +1345,9 @@ applicable agreement for further details.
 	(pt 800 576)
 )
 (connector
-	(text "ERROR" (rect 264 520 304 532)(font "Arial" ))
-	(pt 304 536)
-	(pt 256 536)
+	(text "ERROR" (rect 440 480 480 492)(font "Arial" ))
+	(pt 480 496)
+	(pt 432 496)
 )
 (connector
 	(pt 1144 440)
@@ -1409,8 +1409,8 @@ applicable agreement for further details.
 	(pt 1432 64)
 )
 (connector
-	(pt 48 504)
-	(pt 304 504)
+	(pt 224 464)
+	(pt 480 464)
 )
 (connector
 	(text "ERROR" (rect 1360 424 1400 436)(font "Arial" ))
